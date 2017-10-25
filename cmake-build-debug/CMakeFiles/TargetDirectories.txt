@@ -1,3 +1,0 @@
-/cygdrive/c/Users/Liam/CLionProjects/MidtermTests/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/Users/Liam/CLionProjects/MidtermTests/cmake-build-debug/CMakeFiles/edit_cache.dir
-/cygdrive/c/Users/Liam/CLionProjects/MidtermTests/cmake-build-debug/CMakeFiles/MidtermTests.dir

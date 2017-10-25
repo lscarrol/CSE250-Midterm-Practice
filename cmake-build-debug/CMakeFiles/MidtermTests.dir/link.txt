@@ -1,1 +1,0 @@
-/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/MidtermTests.dir/main.cpp.o CMakeFiles/MidtermTests.dir/OurList.cpp.o  -o MidtermTests.exe -Wl,--out-implib,libMidtermTests.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
