@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MidtermTests.dir/main.cpp.o"
+  "CMakeFiles/MidtermTests.dir/OurList.cpp.o"
   "MidtermTests.pdb"
   "MidtermTests.exe"
   "libMidtermTests.dll.a"

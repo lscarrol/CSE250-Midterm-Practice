@@ -123,6 +123,33 @@ MidtermTests/fast:
 	$(MAKE) -f CMakeFiles/MidtermTests.dir/build.make CMakeFiles/MidtermTests.dir/build
 .PHONY : MidtermTests/fast
 
+OurList.o: OurList.cpp.o
+
+.PHONY : OurList.o
+
+# target to build an object file
+OurList.cpp.o:
+	$(MAKE) -f CMakeFiles/MidtermTests.dir/build.make CMakeFiles/MidtermTests.dir/OurList.cpp.o
+.PHONY : OurList.cpp.o
+
+OurList.i: OurList.cpp.i
+
+.PHONY : OurList.i
+
+# target to preprocess a source file
+OurList.cpp.i:
+	$(MAKE) -f CMakeFiles/MidtermTests.dir/build.make CMakeFiles/MidtermTests.dir/OurList.cpp.i
+.PHONY : OurList.cpp.i
+
+OurList.s: OurList.cpp.s
+
+.PHONY : OurList.s
+
+# target to generate assembly for a file
+OurList.cpp.s:
+	$(MAKE) -f CMakeFiles/MidtermTests.dir/build.make CMakeFiles/MidtermTests.dir/OurList.cpp.s
+.PHONY : OurList.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... MidtermTests"
+	@echo "... OurList.o"
+	@echo "... OurList.i"
+	@echo "... OurList.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

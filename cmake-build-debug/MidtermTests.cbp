@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/Liam/CLionProjects/MidtermTests/OurList.cpp">
+			<Option target="MidtermTests"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Liam/CLionProjects/MidtermTests/OurList.h">
+			<Option target="MidtermTests"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Liam/CLionProjects/MidtermTests/main.cpp">
 			<Option target="MidtermTests"/>
 		</Unit>
