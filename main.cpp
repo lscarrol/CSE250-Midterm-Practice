@@ -140,7 +140,7 @@ int main() {
 
 
     //2(a) tests knowledge of singly linked list
-    std::cout << "\n\nMIDTERM QUESTION 2(a)\n----------------------" << std::endl;
+    std::cout << "\n\nMIDTERM QUESTION 2\n----------------------" << std::endl;
     OurList* theList = new OurList();
     std::cout << "Printing list:\nnode1: " << theList->head->_value
               << "\n  ||\n  \\/\nnode2: "<< theList->head->_next->_value
@@ -164,5 +164,32 @@ int main() {
               << "\n  ||\n  \\/\nnode2: "<< theList->head->_next->_value
               << "\n  ||\n  \\/\nnode3: " << theList->head->_next->_next->_value
               << std::endl;
+
+
+    //3() tests ability to write recursive function
+    theList->insert(theList->head, 22);
+    std::cout << "\n\nMIDTERM QUESTION 3\n----------------------" << std::endl;
+    std::cout << "\n*USING LIST FROM LAST QUESTION*\nPrinting current list:\n\nnode1: " << theList->head->_value
+              << "\n  ||\n  \\/\nnode2: "<< theList->head->_next->_value
+              << "\n  ||\n  \\/\nnode3: " << theList->head->_next->_next->_value
+              << "\n  ||\n  \\/\nnode4: " << theList->head->_next->_next->_next->_value
+              << "\n" << std::endl;
+
+    theList->reverse(theList->head, nullptr);
+
+    std::cout << "\nPrinting current list after fully reversed:\n\nnode1: " << theList->head->_value
+              << "\n  ||\n  \\/\nnode2: "<< theList->head->_next->_value
+              << "\n  ||\n  \\/\nnode3: " << theList->head->_next->_next->_value
+              << "\n  ||\n  \\/\nnode4: " << theList->head->_next->_next->_next->_value
+              << "\n\nLooking at how our list changes on each call to reverse, we can see that it takes param head, sets\n"
+                      "next to param prevHead, until it reaches base case of reaching the last node, where it\n"
+                      "links it and returns it"
+              << std::endl;
+
+
+
+
+
+
 
 };

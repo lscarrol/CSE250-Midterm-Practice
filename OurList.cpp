@@ -1,7 +1,7 @@
 //
 // Created by Liam on 10/24/2017.
 //
-
+#include <iostream>
 #include "OurList.h"
 
 //this method inserts value AFTER param node
@@ -44,4 +44,37 @@ bool OurList::remove(Node *node) {
     delete delNode;
 
     return true;
+}
+
+
+//this method reverses a singly linked list
+Node* OurList::reverse(Node* head, Node* prevHead) {
+    Node* temp;
+    //base case, if head.next = nullptr
+    if (head->_next == nullptr) {
+        head->_next = prevHead;
+        this->head = head;
+        return head;
+    } else {
+        printList(head);
+        temp = reverse(head->_next, head);
+        head->_next = prevHead;
+        return temp;
+    }
+
+}
+
+
+//print list for recursive calls
+void OurList::printList(Node* head) {
+    Node* curr = head;
+    int count = 1;
+    std::cout << "\nNew Call Printing list:\n" << std::endl;
+    while (curr != nullptr) {
+        std::cout << "node" << count << ": " << curr->_value
+                  << "\n  ||\n  \\/"
+                  << std::endl;
+        curr = curr->_next;
+        count++;
+    }
 }

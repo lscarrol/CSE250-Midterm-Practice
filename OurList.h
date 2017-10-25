@@ -23,7 +23,8 @@ public:
 
     void insert(Node* node, int value);
     bool remove(Node* node);
-
+    Node* reverse(Node* head, Node* prevHead);
+    void printList(Node* head);
 
     //adding functionality for testing
     OurList() {
